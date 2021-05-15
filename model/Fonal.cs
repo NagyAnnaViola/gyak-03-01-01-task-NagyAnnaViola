@@ -10,5 +10,19 @@ namespace gyak_03_01_01_task_NagyAnnaViola.model
     {
         private string type; //fonal típusa
         private int piece; //hány darab fonal adott fonal típusból
+
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
+        /// <param name="type">fonal típusa</param>
+        /// <param name="piece">darabszám</param>
+        public Fonal(string type, int piece)
+        {
+            this.type = type;
+            this.piece = piece;
+        }
     }
+
+
+
 }
