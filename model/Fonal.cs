@@ -151,6 +151,14 @@ namespace gyak_03_01_01_task_NagyAnnaViola.model
             }
 
             /// <summary>
+            /// vásárló tulajdonság
+            /// </summary>
+            public string Buyer
+            { 
+                get { return buyer; }
+            }
+
+            /// <summary>
             /// két féle fonal vásárlása
             /// </summary>
             /// <param name="kendo1"></param>
