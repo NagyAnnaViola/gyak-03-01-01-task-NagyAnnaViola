@@ -108,8 +108,18 @@ namespace gyak_03_01_01_task_NagyAnnaViola.model
                 }
             }
         }
+        /// <summary>
+        /// karakterlánccá alakítás
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            string output = "Ehhez a kendőhöz ilyen típusú fonal szükséges: " + type +
+                "\nÖsszesen " + piece + " db fonal szükséges az elkészítéséhez. ";
+            return output;
+        }
 
-        
+
     }
 
 
