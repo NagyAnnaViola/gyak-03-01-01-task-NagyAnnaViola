@@ -87,6 +87,28 @@ namespace gyak_03_01_01_task_NagyAnnaViola.model
             }
         }
 
+        /// <summary>
+        /// nem kívánt fonalak/színek visszatétele
+        /// </summary>
+        /// <param name="newFonal"></param>
+        public void Remove(int newFonal)
+        {
+            if (newFonal < Piece)
+                Piece = -newFonal;
+            else
+            {
+                try
+                {
+                    throw new Exception("Jól meggondolta? Nem ajánlott visszatenni ennyi fonalat, mert akkor nem lesz kész a kívánt kendő.");
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                    Debug.WriteLine(e.Message);
+                }
+            }
+        }
+
         
     }
 
