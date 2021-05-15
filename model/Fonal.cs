@@ -149,6 +149,23 @@ namespace gyak_03_01_01_task_NagyAnnaViola.model
                 this.kisKendo = kisKendo;
                 this.nagyKendo = nagyKendo;
             }
+
+            /// <summary>
+            /// két féle fonal vásárlása
+            /// </summary>
+            /// <param name="kendo1"></param>
+            /// <param name="kendo2"></param>
+            /// <param name="piece"></param>
+            public void Buying(Fonal kendo1, Fonal kendo2, int piece)
+            {
+                if (kendo1.Piece - piece > 0)
+                {
+                    kendo1.Piece -= piece;
+                    kendo2.Piece = piece;
+                }
+                else
+                    throw new Exception("Nincs készleten ennyi szivárnyszínű és csillogós fonal jelenleg.");
+            }
         }
 
 
