@@ -41,7 +41,7 @@ namespace gyak_03_01_01_task_NagyAnnaViola
             try
             {
                 vasarlo.Buying(nagyKendo, kisKendo, 20);
-                Console.WriteLine(vasarlo + '\n');
+                Console.WriteLine(vasarlo + "\n");
             }
             catch (Exception e)
             {
