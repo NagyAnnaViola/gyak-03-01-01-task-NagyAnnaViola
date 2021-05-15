@@ -131,6 +131,24 @@ namespace gyak_03_01_01_task_NagyAnnaViola.model
             private object kisKendo; //kis kendő
             private Fonal nagyKendo; //nagy kendő
 
+            /// <summary>
+            /// Konstruktor 
+            /// </summary>
+            /// <param name="buyer">vásárló</param>
+            /// <param name="szivarvany">szivrávány fonal</param>
+            /// <param name="csillogo">csillogó fonal</param>
+            public Kendo(string buyer, Fonal szivarvany, Fonal csillogo)
+            {
+                this.buyer = buyer;
+                this.szivarvany = szivarvany;
+                this.csillogo = csillogo;
+            }
+
+            public Kendo(object kisKendo, Fonal nagyKendo)
+            {
+                this.kisKendo = kisKendo;
+                this.nagyKendo = nagyKendo;
+            }
         }
 
 
