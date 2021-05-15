@@ -43,6 +43,28 @@ namespace gyak_03_01_01_task_NagyAnnaViola.model
             set { type = value; }
         }
 
+        /// <summary>
+        /// kért fonal mennyiség számítása
+        /// </summary>
+        public int Piece
+        {
+            get { return piece; }
+            set 
+            {
+                if (value > 0)
+                    piece += value;
+                else try
+                    {
+                        throw new Exception("Minusz számú fonalat nem lehet kérni. ");
+                    }
+                 catch (Exception ex)
+                    {
+                        Debug.WriteLine("Minusz érték nem szerepelhet itt.");
+                        Console.WriteLine(ex.Message);
+                    }
+            }
+        }
+
         
     }
 
