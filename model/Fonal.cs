@@ -166,10 +166,27 @@ namespace gyak_03_01_01_task_NagyAnnaViola.model
                 else
                     throw new Exception("Nincs készleten ennyi szivárnyszínű és csillogós fonal jelenleg.");
             }
+
+            /// <summary>
+            /// karakterlánccá alakítás
+            /// </summary>
+            /// <returns></returns>
+            public override string ToString()
+            {
+                string output = "Vásárló neve: " + buyer;
+                output += "\n Szivárványos kis kendőhöz fonalak: " + szivarvany.Type ;
+                output += "\n Szivárványos nagy kendőhöz fonalak: " + szivarvany.Type ;
+                output += "\n Csillogós kis kendőhöz fonalak: " + csillogo.Type ;
+                output += "\n Csillogós nagy kendőhöz fonalak: " + csillogo.Type;
+                output += "\n Vegyes színű kis kendőhöz fonalak" + csillogo.Type + szivarvany.Type;
+
+                return output;
+            }
         }
-
-
+       
+        
     }
+   
 
 
 
