@@ -128,8 +128,8 @@ namespace gyak_03_01_01_task_NagyAnnaViola.model
             public string buyer; //vásárló
             public Fonal szivarvany; //szivárványszínű fonal
             public Fonal csillogo; //csillogós színű
-            private object kiskendo; //kiskendő
-            private Fonal nagykendo; //nagykendő
+            private object kisKendo; //kis kendő
+            private Fonal nagyKendo; //nagy kendő
 
         }
 
