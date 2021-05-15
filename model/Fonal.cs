@@ -8,5 +8,7 @@ namespace gyak_03_01_01_task_NagyAnnaViola.model
 {
     class Fonal
     {
+        private string type; //fonal típusa
+        private int piece; //hány darab fonal adott fonal típusból
     }
 }
