@@ -22,7 +22,7 @@ namespace gyak_03_01_01_task_NagyAnnaViola.model
             try
             {
                 if (piece == 1) //egy darab fonal
-                    throw new Exception("Egy fonalból nem lehet megfelelő méretű horgolt kendőt, illetve amigurumi fiugrát készíteni, " +
+                    throw new Exception("Egy fonalból nem lehet megfelelő méretű horgolt kendőt készíteni, " +
                         "kérem tegyen még a kosárába fonalat.");
             }
             catch (Exception e)
@@ -62,6 +62,28 @@ namespace gyak_03_01_01_task_NagyAnnaViola.model
                         Debug.WriteLine("Minusz érték nem szerepelhet itt.");
                         Console.WriteLine(ex.Message);
                     }
+            }
+        }
+
+        /// <summary>
+        /// további fonalak/színek hozzáadása
+        /// </summary>
+        /// <param name="newFonal"></param>
+        public void Add(int newFonal)
+        {
+            if (piece + newFonal <= 50)
+                piece += newFonal;
+            else
+            {
+                try
+                {
+                    throw new Exception("Ennél több szín/fonal nem szükséges a kívánt horgolt kendő elkészítéséhez");
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                    Debug.WriteLine(e.Message);
+                }
             }
         }
 
