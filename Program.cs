@@ -19,7 +19,36 @@ namespace gyak_03_01_01_task_NagyAnnaViola
             Fonal nagyKendo = new Fonal("Szivárványos fonal", 8);
             Console.WriteLine(nagyKendo);
 
-            Kendo buyer 
+            Kendo buyer = new Kendo("Kisduci Illés", kisKendo, nagyKendo);
+            Console.WriteLine("\t"+buyer+"\n");
+
+            //hozzáadás, elvétel
+            kisKendo.Add(5);
+            kisKendo.Remove(2);
+            nagyKendo.Add(3);
+            nagyKendo.Remove(2);
+            Console.WriteLine(kisKendo);
+            Console.WriteLine(nagyKendo);
+
+            //vegyesen
+            buyer.Buying(nagyKendo, kisKendo, 20);
+            Console.WriteLine(buyer + "\n");
+
+            //hibatesztelés 1 fonal esetén
+            Fonal order = new Fonal("Csillogós", 1);
+            Console.WriteLine("\n");
+
+            try
+            {
+                buyer.Buying(nagyKendo, kisKendo, 20);
+                Console.WriteLine(buyer + '\n');
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Debug.WriteLine(e.Message);
+            }
+            Console.ReadKey();
                  
         }
     }
