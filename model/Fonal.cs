@@ -120,6 +120,20 @@ namespace gyak_03_01_01_task_NagyAnnaViola.model
         }
 
 
+        /// <summary>
+        /// kendő osztály
+        /// </summary>
+        class Kendo //kendő osztály 
+        {
+            public string buyer; //vásárló
+            public Fonal szivarvany; //szivárványszínű fonal
+            public Fonal csillogo; //csillogós színű
+            private object kiskendo; //kiskendő
+            private Fonal nagykendo; //nagykendő
+
+        }
+
+
     }
 
 
