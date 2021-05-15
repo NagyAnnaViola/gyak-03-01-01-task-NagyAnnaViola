@@ -34,6 +34,15 @@ namespace gyak_03_01_01_task_NagyAnnaViola.model
             this.piece = piece;
         }
 
+        /// <summary>
+        /// Fonal típusának tulajdonsága
+        /// </summary>
+        public string Type
+        {
+            get { return type; }
+            set { type = value; }
+        }
+
         
     }
 
